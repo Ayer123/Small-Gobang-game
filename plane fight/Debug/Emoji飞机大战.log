@@ -1,0 +1,23 @@
+﻿  main.cpp
+  view.cpp
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(554,46): warning C4244: “-=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(555,46): warning C4244: “-=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(561,46): warning C4244: “-=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(562,46): warning C4244: “-=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(568,46): warning C4244: “+=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(569,46): warning C4244: “+=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(575,46): warning C4244: “+=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(576,46): warning C4244: “+=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(582,46): warning C4244: “+=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(583,46): warning C4244: “+=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(589,46): warning C4244: “+=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(590,46): warning C4244: “+=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(596,46): warning C4244: “+=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(597,46): warning C4244: “+=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(603,46): warning C4244: “+=”: 从“long double”转换到“int”，可能丢失数据
+C:\Users\MYG\Desktop\Emoji飞机大战\view.cpp(604,46): warning C4244: “+=”: 从“long double”转换到“int”，可能丢失数据
+  service.cpp
+C:\Users\MYG\Desktop\Emoji飞机大战\service.cpp(262,20): warning C4018: “<”: 有符号/无符号不匹配
+  dao.cpp
+  正在生成代码...
+  Emoji飞机大战.vcxproj -> C:\Users\MYG\Desktop\Emoji飞机大战\Debug\Emoji飞机大战.exe

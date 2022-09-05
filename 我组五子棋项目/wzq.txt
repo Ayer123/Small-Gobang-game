@@ -1,0 +1,60 @@
+#include<stdio.h>
+int map[15][15]; // 0表示空地   1表示黑子  2表示白子
+int flag; //2表示白子， 1表示黑子
+
+/*
+*	早睡晚起
+	落子
+	判断棋盘中xy的位置是什么情况
+	如果有子  返回0
+	如果没子
+		落子  并判断是否胜利（判断落子的上下左右， 斜线是否有连5子）
+			判断其他格子是否都被占满了
+	如果胜利 返回2
+	如果都占满  返回3
+	否则  正常落子 返回1
+*/
+int fun1(int x, int y)
+{
+	if (map[x][y] != 0)     //位置有棋子
+	{
+		return 0;
+	}
+	else					//位置无棋子
+	{
+		flag++;
+		if (flag % 2 == 0)  //判断黑色还是白色棋子
+		{
+			map[x][y] = 1;
+		}
+		else
+		{
+			map[x][y] = 0;
+		}
+	}
+	
+	int m, n;
+	for (m = 0; m < 15; m++)	//判断胜负
+	{
+		for (n = 0; n < 15; n++)
+		{
+				if (map[m][n] == 1 && map[m][n + 1] == 1 && map[m][n + 2] == 1 && map[m][n + 3] == 1 && map[m][n + 4] == 1)return 2;
+				if (map[m][n] == 1 && map[m + 1][n] == 1 && map[m + 2][n] == 1 && map[m + 3][n] == 1 && map[m + 4][n] == 1)return 2;
+				if (map[m][n] == 1 && map[m + 1][n + 1] == 1 && map[m + 2][n + 2] == 1 && map[m + 3][n + 3] == 1 && map[m + 4][n + 4] == 1)return 2;
+				if (n > 3 && map[m][n] == 1 && map[m + 1][n - 1] == 1 && map[m + 2][n - 2] == 1 && map[m + 3][n - 3] == 1 && map[m + 4][n - 4] == 1)return 2;
+				if (map[m][n] == 2 && map[m][n + 1] == 2 && map[m][n + 2] == 2 && map[m][n + 3] == 2 && map[m][n + 4] == 2)return 2;
+				if (map[m][n] == 2 && map[m + 1][n] == 2 && map[m + 2][n] == 2 && map[m + 3][n] == 2 && map[m + 4][n] == 2)return 2;
+				if (map[m][n] == 2 && map[m + 1][n + 1] == 2 && map[m + 2][n + 2] == 2 && map[m + 3][n + 3] == 2 && map[m + 4][n + 4] == 2)return 2;
+				if (n > 3 && map[m][n] == 2 && map[m + 1][n - 1] == 2 && map[m + 2][n - 2] == 2 && map[m + 3][n - 3] == 2 && map[m + 4][n - 4] == 2)return 2;
+		}
+	}
+	if (flag > 225)			//棋盘满
+	{
+		return 3;
+	}
+	else
+	{
+		return 1;
+	}
+}
+	
